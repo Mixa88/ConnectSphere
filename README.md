@@ -5,8 +5,7 @@
 
 ## Screenshot
 
-<img src="connectsphere-demo.png" width="300">
-<img src="connectsphere-demo_1.png" width="300">
+<img src="connectsphere-demo.png" width="300">, <img src="connectsphere-demo_1.png" width="300">
 
 ## About The Project
 
