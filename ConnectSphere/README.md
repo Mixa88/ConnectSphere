@@ -21,6 +21,7 @@ ConnectSphere is a client application that demonstrates key iOS development skil
 - **Provides a detail view** for each user, showing comprehensive information including their list of friends.
 - **Built entirely with SwiftUI**, using modern tools like `async/await` and `NavigationStack`.
 
+
 ## Technologies Used
 
 - **UI Framework:** SwiftUI
