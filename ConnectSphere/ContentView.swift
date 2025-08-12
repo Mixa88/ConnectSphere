@@ -14,7 +14,20 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List(users) { user in
-                Text(user.name)
+                
+                NavigationLink {
+                    
+                    DetailView(user: user)
+                } label: {
+                    
+                    HStack {
+                        Circle()
+                            .fill(user.isActive ? .green : .gray)
+                            .frame(width: 10, height: 10)
+                        
+                        Text(user.name)
+                    }
+                }
             }
             .navigationTitle("ConnectSphere")
             .task {
