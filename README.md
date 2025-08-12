@@ -5,7 +5,7 @@
 
 ## Screenshot
 
-![App Screenshot](connectsphere-demo.png)
+<img src="connectsphere-demo.png" width="300">
 
 ## About The Project
 
