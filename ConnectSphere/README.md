@@ -6,7 +6,6 @@
 ## Screenshot
 
 ![App Screenshot](connectsphere-demo.png)
-![App Screenshot](connectsphere-demo_1.png)
 
 ## About The Project
 
@@ -14,22 +13,15 @@ ConnectSphere is a client application that demonstrates key iOS development skil
 
 ## Features
 
-- **Fetches user data** from a remote API using `URLSession`.
-- **Parses complex JSON** into Swift models using `Codable`.
-- **Handles advanced data types**, including `UUID` and `ISO8601` formatted dates.
-- **Displays a master list** of users with their online status.
-- **Provides a detail view** for each user, showing comprehensive information including their list of friends.
-- **Built entirely with SwiftUI**, using modern tools like `async/await` and `NavigationStack`.
-
+- Fetches user data from a remote API using `URLSession`.
+- Parses complex JSON into Swift models using `Codable`.
+- Displays a master list of users with their online status.
+- Provides a detail view for each user, showing comprehensive information including their list of friends.
+- Built entirely with SwiftUI.
 
 ## Technologies Used
 
-- **UI Framework:** SwiftUI
-- **Networking:** URLSession with `async/await`
-- **Data Parsing:** Codable
-- **Navigation:** NavigationStack
-- **Language:** Swift
-
----
-
-This project was built as part of my learning journey with the [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) course.
+- SwiftUI
+- URLSession & Codable
+- `async/await`
+- Swift
