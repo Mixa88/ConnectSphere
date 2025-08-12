@@ -5,8 +5,8 @@
 
 ## Screenshot
 
-![App Screenshot](ConnectSphere-Screenshot.png) 
-*To add a screenshot: take a screenshot of your app, name the file `ConnectSphere-Screenshot.png`, and drag it into your project folder in GitHub Desktop or push it via terminal. Then it will show up here.*
+![App Screenshot](connectsphere-demo.png)
+![App Screenshot](connectsphere-demo_1.png)
 
 ## About The Project
 
