@@ -3,6 +3,8 @@
 
 *A simple and elegant iOS app built with SwiftUI to browse user profiles fetched from a remote JSON API. This project is a solution to the "FriendFace" challenge from Paul Hudson's 100 Days of SwiftUI course.*
 
+This project is a solution to the "FriendFace" challenge from Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) course.
+
 ## Screenshot
 
 <img src="connectsphere-demo.png" width="300">, <img src="connectsphere-demo_1.png" width="300">
