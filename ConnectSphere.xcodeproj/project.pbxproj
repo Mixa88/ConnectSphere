@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		BA35C8D92E4A7F9300DD81BC /* ConnectSphere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectSphere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA686F612E4BB7A300233254 /* ConnectSphere.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ConnectSphere.xcodeproj; sourceTree = "<group>"; };
+		BAAFAC4A2E4CADB400854030 /* ConnectSphere.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ConnectSphere.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -47,6 +48,11 @@
 			sourceTree = "<group>";
 		};
 		BA686F692E4BB7A300233254 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAAFAC522E4CADB400854030 /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +113,10 @@
 				{
 					ProductGroup = BA686F692E4BB7A300233254 /* Products */;
 					ProjectRef = BA686F612E4BB7A300233254 /* ConnectSphere.xcodeproj */;
+				},
+				{
+					ProductGroup = BAAFAC522E4CADB400854030 /* Products */;
+					ProjectRef = BAAFAC4A2E4CADB400854030 /* ConnectSphere.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -263,7 +273,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ConnectSphere/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = M4AN86ZBTV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -292,7 +302,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ConnectSphere/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = M4AN86ZBTV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     
-    @State private var users = [User]()
+    @Environment(\.modelContext) var modelContext
+    
+    @Query(sort: \User.name) var users: [User]
     
     var body: some View {
         NavigationStack {
@@ -32,28 +35,36 @@ struct ContentView: View {
             .navigationTitle("ConnectSphere")
             .task {
                 if users.isEmpty {
-                    await fetchData()
+                    await loadData()
                 }
             }
         }
     }
     
-    func fetchData() async {
-        guard let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json") else { print("Invalid URL")
-            return
-        }
+    func loadData() async {
+        guard users.isEmpty else { return }
         
         do {
+            let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json")!
             let (data, _) = try await URLSession.shared.data(from: url)
+
+            
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601
             
             let decodedUsers = try decoder.decode([User].self, from: data)
-            users = decodedUsers
+            
+            
+            for users in decodedUsers {
+                modelContext.insert(users)
+            }
         } catch {
-            print("Error fetching or decoding data: \(error.localizedDescription)")
+            print("Failed to load data: \(error.localizedDescription)")
         }
+        
     }
+    
+    
 }
 
 #Preview {
