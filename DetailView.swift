@@ -60,14 +60,13 @@ struct DetailView: View {
 
 #Preview {
     do {
-        // 1. Создаем конфигурацию, чтобы данные хранились только в памяти,
-        // а не в основной базе данных приложения.
+    
         let config = ModelConfiguration(isStoredInMemoryOnly: true)
 
-        // 2. Создаем сам контейнер для превью.
+        
         let container = try ModelContainer(for: User.self, configurations: config)
 
-        // 3. Создаем образец пользователя, используя наш init.
+        
         let exampleUser = User(
             id: UUID(),
             isActive: true,
@@ -82,16 +81,15 @@ struct DetailView: View {
             friends: [] // Для превью можно обойтись без друзей
         )
 
-        // 4. ВАЖНО: Вставляем наш образец в контекст контейнера.
-        // Этот шаг "оживляет" объект в мире SwiftData.
+        
         container.mainContext.insert(exampleUser)
 
-        // 5. Возвращаем наш View и передаем ему созданный контейнер.
+        
         return DetailView(user: exampleUser)
             .modelContainer(container)
 
     } catch {
-        // Если что-то пошло не так, показываем ошибку.
+        
         return Text("Failed to create preview: \(error.localizedDescription)")
     }
 }
